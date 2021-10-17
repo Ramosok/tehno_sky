@@ -1,5 +1,5 @@
 const baseUrl = 'http://api.weatherstack.com';
-const apiKey = 'ac6a7a7341c076db739165accff896c6\n';
+const apiKey = 'a2123411c26fe0c1e93c7634bf91e2fd';
 
 export const sendRequest = async (
     path,

@@ -45,12 +45,12 @@ const Header = () => {
     return (
         <div className="header">
             <Clock className="clock" format={'HH:mm'} ticking={true}/>
-            {/*<div className="weather">
+            <div className="weather">
                 <div>{weatherData ? weatherData.current.temperature : '...'}&#xb0;С</div>
                 <div className="info__center-image">
                     <img src={weatherData ? weatherData.current.weather_icons : '...'} alt=""/>
                 </div>
-            </div>*/}
+            </div>
             <select className="select" onChange={(event) => changeLanguage(event.target.value)} name="select">
                 <option value="ru">ru</option>
                 <option value="en">en</option>
