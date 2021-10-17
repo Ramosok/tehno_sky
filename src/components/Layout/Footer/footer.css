@@ -1,0 +1,7 @@
+.container__footer {
+    max-width: 1080px;
+    height: 130px;
+    box-sizing: border-box;
+    background-color: #009DE9;
+    margin: 0 auto;
+}

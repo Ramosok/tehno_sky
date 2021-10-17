@@ -2,7 +2,32 @@
     max-width: 1080px;
     height: 1129px;
     margin: 0 auto;
-    border:1px solid black;
     box-sizing: border-box;
     background-color: #ffffff;
+    background-image: url(./../../static/fon.jpg);
+
+}
+.heading {
+    text-align: center;
+    margin-left: 30px;
+    margin-top: -25px;
+    padding-top: 30px ;
+}
+.down {
+    float: right;
+    background-color: transparent;
+}
+img {
+    margin: 15px;
+}
+.container__card__page__one {
+    display: inline-block;
+    margin-left: 50px;
+}
+.container__card__page__one div {
+    box-shadow: 10px 10px 15px black;
+}
+.container__card__page__one p {
+    padding-top: 20px;
+    text-align: center;
 }

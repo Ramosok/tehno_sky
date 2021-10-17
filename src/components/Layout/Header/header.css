@@ -1,0 +1,32 @@
+.header {
+    max-width: 1080px;
+    max-height: 73px;
+    background-color: #009DE9;
+    margin: 0 auto;
+    padding: 18px 60px 14px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.clock, .weather,.date{
+    color: #ffffff;
+    font-size: 30px;
+}
+.weather {
+    position: relative;
+    margin-left: -233px;
+}
+.info__center-image img {
+    position: absolute;
+    top:-5px;
+    left: 61px;
+    width: 28px;
+    height: 28px;
+}
+.select {
+    background-color: #009DE9;
+    border: none;
+    font-size: 25px;
+    color: #ffffff;
+}

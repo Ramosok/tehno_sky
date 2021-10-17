@@ -2,20 +2,35 @@
   "name": "react-test-tehno-sky",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ramosok.github.io/tehno_skygp",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "i18next": "^21.3.2",
+    "i18next-browser-languagedetector": "^6.1.2",
+    "i18next-http-backend": "^1.3.1",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.33",
     "react": "^17.0.2",
+    "react-clock": "^3.0.0",
     "react-dom": "^17.0.2",
+    "react-i18next": "^11.12.0",
+    "react-live-clock": "^5.2.0",
+    "react-moment": "^1.1.1",
+    "react-multi-carousel": "^2.6.5",
+    "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
+    "serve": "^12.0.1",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
