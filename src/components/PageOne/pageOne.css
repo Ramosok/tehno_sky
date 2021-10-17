@@ -1,0 +1,8 @@
+.container__page__one {
+    max-width: 1080px;
+    height: 1129px;
+    margin: 0 auto;
+    border:1px solid black;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
