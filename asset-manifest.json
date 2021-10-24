@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/tehno_sky/static/css/main.2b11de61.chunk.css",
-    "main.js": "/tehno_sky/static/js/main.d1e942ad.chunk.js",
-    "main.js.map": "/tehno_sky/static/js/main.d1e942ad.chunk.js.map",
+    "main.js": "/tehno_sky/static/js/main.169bf9ab.chunk.js",
+    "main.js.map": "/tehno_sky/static/js/main.169bf9ab.chunk.js.map",
     "runtime-main.js": "/tehno_sky/static/js/runtime-main.1022c512.js",
     "runtime-main.js.map": "/tehno_sky/static/js/runtime-main.1022c512.js.map",
     "static/css/2.a4070788.chunk.css": "/tehno_sky/static/css/2.a4070788.chunk.css",
@@ -22,6 +22,6 @@
     "static/css/2.a4070788.chunk.css",
     "static/js/2.53c30608.chunk.js",
     "static/css/main.2b11de61.chunk.css",
-    "static/js/main.d1e942ad.chunk.js"
+    "static/js/main.169bf9ab.chunk.js"
   ]
 }
