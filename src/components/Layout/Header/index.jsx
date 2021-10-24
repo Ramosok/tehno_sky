@@ -37,6 +37,12 @@ const Header = () => {
         fetchWeather();
     }, [fetchWeather]);
 
+    const date = new Date().toLocaleString(`${lang}`, {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    }).substr(0, 16);
+
     return (
         <div className="header">
             <Clock className="clock" format={'HH:mm'} ticking={true}/>
@@ -50,7 +56,7 @@ const Header = () => {
                 <option value="ru">ru</option>
                 <option value="en">en</option>
             </select>
-
+            <div className="date">{date}</div>
         </div>
     );
 };
