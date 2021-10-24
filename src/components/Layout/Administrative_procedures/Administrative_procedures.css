@@ -1,0 +1,25 @@
+.container__administrative_procedures {
+    max-width: 1080px;
+    height: 1129px;
+    margin: -25px auto;
+    box-sizing: border-box;
+    background-color: transparent;
+    background-image: url(./../../../static/fon.jpg);
+}
+.heading {
+    text-align: center;
+    padding-top: 30px ;
+}
+.heading__margin__left {
+    margin-left: 150px;
+}
+.down {
+    float: right;
+    background-color: transparent;
+    padding: 15px 30px;
+}
+.box_shadow {
+    box-shadow: 20px 20px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+

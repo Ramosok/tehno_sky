@@ -1,21 +1,19 @@
 .container__card {
-    display: inline-block;
     width: 300px;
     height: 250px;
     box-sizing: border-box;
     border-radius: 45px;
     background-color: #ffffff;
+
 }
 .img {
     width: 70px;
     height: 80px;
     margin: 40px 195px 35px 25px;
 }
-.container__card:nth-child(2) {
-    margin: 0 35px 35px 35px;
-}
+
 .container__card:nth-child(4) {
-  margin-left: 35%;
+
 }
 .title{
     margin-top: 40px;
@@ -24,9 +22,7 @@
     color:#2B2E2D;
     text-transform: uppercase;
 }
-.container__card:first-child p {
-    margin-top: 20px;
-}
+
 .link {
     text-decoration: none;
 }

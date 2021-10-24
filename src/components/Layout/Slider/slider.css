@@ -1,8 +1,15 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
 .container__slider {
     max-width: 1080px;
-    min-height: 608px;
+    max-height: 608px;
     margin: 0 auto;
-    box-sizing: border-box;
-    margin-top: -15px ;
+    background-color: transparent;
 }
 
+.image-gallery-right-nav .image-gallery-svg, .image-gallery-left-nav .image-gallery-svg {
+    height: 60px;
+    width: 60px;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 50%;
+}

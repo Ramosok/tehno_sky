@@ -1,5 +1,5 @@
 // libraries
-import React, {useEffect, useState} from 'react';
+import React, {useCallback, useEffect, useState} from 'react';
 import Clock from 'react-live-clock';
 import {useTranslation} from "react-i18next";
 //api
@@ -8,17 +8,17 @@ import {getCurrentWeather} from "../../../api/weather";
 // styles
 import './header.css';
 
-
 const Header = () => {
     const {i18n} = useTranslation();
 
     const changeLanguage = (language) => {
         i18n.changeLanguage(language);
     };
+    let lang = i18n.resolvedLanguage
 
     const [weatherData, setWeatherData] = useState(null);
 
-    useEffect(async () => {
+    const fetchWeather = useCallback (async () => {
         const coords = await new Promise(resolve => {
             navigator.geolocation.getCurrentPosition(data => {
                 resolve(data.coords);
@@ -33,8 +33,9 @@ const Header = () => {
             console.log(e);
         }
     }, []);
-
-    let lang = i18n.resolvedLanguage
+    useEffect(() => {
+        fetchWeather();
+    }, [fetchWeather]);
 
     const date = new Date().toLocaleString(`${lang}`, {
         year: 'numeric',
@@ -45,7 +46,7 @@ const Header = () => {
     return (
         <div className="header">
             <Clock className="clock" format={'HH:mm'} ticking={true}/>
-            <div className="weather">
+           <div className="weather">
                 <div>{weatherData ? weatherData.current.temperature : '...'}&#xb0;С</div>
                 <div className="info__center-image">
                     <img src={weatherData ? weatherData.current.weather_icons : '...'} alt=""/>

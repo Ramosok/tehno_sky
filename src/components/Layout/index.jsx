@@ -6,10 +6,8 @@ import Header from "./Header";
 import Slider from "./Slider";
 import Footer from "./Footer";
 import Main from "./Main";
-import PageOne from "../PageOne";
-import PageTwo from "../PageTwo";
-import PageThree from "../PageThree";
-import PageFour from "../PageFour";
+import Administrative_procedures from "./Administrative_procedures";
+
 
 // styles
 
@@ -20,10 +18,7 @@ const Layout = () => {
             <Slider/>
             <Switch>
                 <Route exact path="/" component={Main}/>
-                <Route path="/page_one" component={PageOne}/>
-                <Route path="/page_two" component={PageTwo}/>
-                <Route path="/page_three" component={PageThree}/>
-                <Route path="/page_four" component={PageFour}/>
+                <Route path="/Administrative_procedures" component={Administrative_procedures}/>
             </Switch>
             <Footer/>
         </div>

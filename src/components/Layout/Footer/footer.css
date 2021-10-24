@@ -1,7 +1,40 @@
 .container__footer {
     max-width: 1080px;
-    height: 130px;
+    max-height: 130px;
     box-sizing: border-box;
     background-color: #009DE9;
     margin: 0 auto;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.text__left, .text__right {
+    box-sizing: border-box;
+    width: 35%;
+    color: #ffffff;
+    font-size: 20px;
+}
+.text__bottom {
+    box-sizing: border-box;
+    width: 100%;
+    color: #ffffff;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.text__left {
+    text-align: right;
+}
+.logo_tehno_sky {
+    box-sizing: border-box;
+    margin: 0 10px;
+    padding: 2px;
+}
+.link_high_tech {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
 }

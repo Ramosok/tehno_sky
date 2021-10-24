@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTranslation } from "react-i18next";
+import {useTranslation} from "react-i18next";
 //components
 import CardMenu from "./CardMenu";
 // styles
@@ -11,26 +11,26 @@ import Guide from './../../../static/_Guide.jpg';
 import reception_schedule from './../../../static/_reception_schedule.jpg';
 
 const Main = () => {
-    const { t, i18n } = useTranslation();
-
-    const changeLanguage = (language) => {
-        i18n.changeLanguage(language);
-    };
-    const initialState = [{id: 1,title: t("title"), img:administrative_procedures, path:'/page_one'},
-        {id: 2, title: t("title_two"), img: Guide,path:'/page_two'},
-        {id: 3, title: t("title_three"), img: reception_schedule, path:'/page_three'},
-        {id: 4, title: t("title_four"), img: structure, path:'/page_four'},
+    const { t } = useTranslation();
+    const initialState = [
+        {id: 1, title: t("title"), img: administrative_procedures, path: '/Administrative_procedures',className:"container__card" },
+        {id: 2, title: t("title_two"), img: Guide, path: '/',className:"container__card"},
+        {id: 3, title: t("title_three"), img: reception_schedule, path: '/',className:"container__card"},
+        {id: 4, title: t("title_four"), img: structure, path: '/',className:"container__card"},
     ]
 
 
     return (
         <div className="container__main">
-            {initialState.map(card => <CardMenu
-                key ={card.id}
-                title = {card.title}
-                img = {card.img}
-                path ={card.path}
-            />)}
+            <div className="cards">
+                {initialState.map(card => <CardMenu
+                    className={card.className}
+                    key={card.id}
+                    title={card.title}
+                    img={card.img}
+                    path={card.path}
+                />)}
+            </div>
         </div>
     );
 };
